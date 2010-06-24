@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest>
+	<field key="author" value="Evan Winslow" />
+	<field key="version" value="0.1" />
+	<field key="description" value="Brings the power of js/css minification to Elgg" />
+	<field key="copyright" value="(C) Evan Winslow 2010" />
+    <field key="website" value="http://code.google.com/p/elgg-minify" />
+</plugin_manifest>
