@@ -8,18 +8,16 @@ function minify_init()
 
 function minify_views($hook, $type, $content, $params)
 {
-	switch($params['view']) {
-		case 'js/initialise_elgg':
-		case 'js/friendsPickerv1':
-			if (include_once('lib/min/lib/JSMin.php')) {
-				return JSMin::minify($content);
-			}
-			break;
-		case 'css':
-			if (include_once('lib/min/lib/CSS.php')) {
-				return Minify_CSS::minify($content);
-			}
-			break;
+	$view = $params['view'];
+	
+	if (preg_match("/^js\//", $view)) {
+		if (include_once dirname(__FILE__).'/lib/min/lib/JSMin.php') {
+			return JSMin::minify($content);
+		}
+	} elseif ($view === 'css') {
+		if (include_once('lib/min/lib/CSS.php')) {
+			return Minify_CSS::minify($content);
+		}
 	}
 }
 
