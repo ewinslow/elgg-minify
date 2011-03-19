@@ -2,7 +2,7 @@
 
 function minify_init() {
 	//make sure this runs after everyone else is done
-	elgg_register_plugin_hook('view', 'all', 'minify_views', 1000);
+	elgg_register_plugin_hook_handler('view', 'all', 'minify_views', 1000);
 }
 
 function minify_views($hook, $type, $content, $params) {
