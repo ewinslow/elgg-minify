@@ -4,8 +4,8 @@
 	<author>Evan Winslow</author>
 	<version>0.3</version>
 	<description>Brings the power of js/css minification to Elgg</description>
-	<copyright>(C) Evan Winslow 2010</copyright>
-    <website>http://github.com/ewinslow/elgg-minify</website>
+	<copyright>(C) Evan Winslow 2010-2011</copyright>
+	<website>http://github.com/ewinslow/elgg-minify</website>
 	<requires>
 		<type>elgg_version</type>
 		<version>2011031400</version>
